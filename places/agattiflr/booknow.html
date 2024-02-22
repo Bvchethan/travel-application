@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ag/images/icon/Screenshot 2024-02-04 005001.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.5.1-web/css/all.css">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('ag/images/gallery/Bard_Generated_Image\ \(30\).jpeg'); /* Relative path to your image */
+    background-size: cover;
+    background-position: center; 
+        }
+
+        .click {
+            text-align: center;
+            margin-bottom: 0px;
+        position: absolute;
+        margin-top:25%;
+        color: #97d47f;
+        }
+        
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+            height: 100px;
+            font-size: 35px;
+        }
+        button:hover{
+            color: rgb(0, 128, 255);
+            background-color: rgb(248, 248, 0);
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            width: 300px;
+            display: none; /* Hide the form by default */
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="click"><h1>Click on the book now button to book your room!</h1></div>
+    <div id="bookNowContainer">
+        <button id="bookNow">Book Now</button>
+    </div>
+    <form id="bookingForm" action="book_hotel.php" method="post" style="display: none;">
+
+        <!-- Your booking form fields here -->
+        <!-- For example: -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin" required><br>
+        
+        
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout" required><br>
+
+        <label for="rooms">Number of Rooms:</label><br>
+        <input type="number" id="rooms" name="rooms" min="1" required><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+         // JavaScript to show the booking form when "Book Now" button is clicked
+         document.getElementById("bookNow").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default button behavior
+            document.getElementById("bookingForm").style.display = "block"; // Show the booking form
+            document.getElementById("bookNowContainer").style.display = "none"; // Hide the Book Now button
+            document.querySelector(".click").style.display = "none"; // Hide the message
+        });
+    </script>
+</body>
+</html>

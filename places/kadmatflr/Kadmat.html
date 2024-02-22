@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kadmat</title>
+    <link rel="icon" href="kd/images/icon/Screenshot 2024-02-04 005001.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.5.1-web/css/all.css">
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXHhIQ35_HBrxRvTqTvpMVcxA2Wg7N63w&callback=initMap"></script>
+
+    <script>
+                   window.onload = function() {
+    alet("Acknowledgment: Please note that the data and images used in this analysis are simulated and not based on real-world information.");
+};
+    
+        function initMap() {
+        
+                var myLatLng = { lat: 11.22600622842185,  lng: 72.77627439861752 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLatLng,
+                    zoom: 15
+                });
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'kadmat'
+                });
+            
+        }
+ </script>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; 
+            color: #333; 
+            
+        }
+
+
+
+
+
+
+
+      
+        nav {
+            background-color: #ffffff;
+            padding: 20px 0;
+            text-align: center; /* Center align the navigation links */
+            background-image: url('kd/images/gallery/Bard_Generated_Image\ \(28\).jpeg'); /* Relative path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;}
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            
+            transition: color 0.3s ease-in-out;
+            font-size: 23px;
+          
+        
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        nav a {
+        padding: 10px;
+    }
+    .dropdown {
+        display: inline-block;
+    }
+    .dropbtn {
+    background-color: rgba(68, 68, 68, 0); 
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+   
+   
+   
+}
+
+
+    .dropdown-content {
+        
+        display: none;
+        position: absolute;
+        background-color: #f0f0f0;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+       
+    }
+
+    .dropdown-content a {
+        color: #000000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ffffff;
+        color: #ffd700;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+       
+    }
+
+    .dropdown:hover .dropbtn {
+
+        color: #ffd700;
+       
+    }
+    header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+       
+@media (max-width: 600px) {
+    header video {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+
+        h1, h2 {
+            color: #333; 
+        }
+        h3{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            color: #2c26268f;
+        }
+       
+        #map {
+            height: 500px;
+            width: 60%;
+        
+            
+        }
+
+        .image-container img {
+            width: 100%; 
+            border-radius: 2px; 
+        }
+
+        @media screen and (max-width: 600px) {
+           
+            .image-container {
+                flex-direction: column;
+                align-items: center; 
+            }
+
+            .image-container img {
+                width: 90%; 
+                margin-bottom: 10px; 
+            }
+        }
+       
+@media (max-width: 699px) {
+    .image-text {
+        
+        font-size: 20px; 
+        padding: 10px; 
+        border-radius: 3px; 
+    }
+}
+
+
+        @media (max-width: 768px) {
+   
+    #map {
+        width: 100%;
+        height: 300px; 
+    }
+}
+
+
+     
+        .image-container {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0); 
+    font-size: 70px; 
+    text-align: center; 
+    font-family: monospace;
+    text-shadow: #000000;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    border-radius: 5px; 
+    
+}
+
+
+        section {
+            background-color: #eee1e1; 
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          
+           
+        }
+
+        #Tourist1 {
+            color: aqua;
+        }
+
+        .transportation-icons {
+            font-size: 24px; 
+            margin-right: 8px; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-image: url('kd/images/gallery/529425-1\ Palmetto\ Natural.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    border-collapse: collapse; 
+    border-radius: 20px; 
+    overflow: hidden; 
+        }
+
+         td {
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        th{
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 27px;
+        }
+        
+@media (max-width: 600px) {
+    td {
+        font-size: 16px; 
+    }
+    th {
+        font-size: 20px; 
+    }
+}
+
+
+        .hotel img {
+            width: 100%; 
+        }
+
+        .restaurants {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap; /
+        }
+
+        .restaurant {
+            width: 40%; 
+            margin-bottom: 10px; 
+        }
+
+        .restaurant img {
+            width: 80%; 
+            border-radius: 5px; 
+        }
+
+        .accommodations {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap; 
+        }
+
+        .accommodation {
+            width: 40%; 
+            margin-bottom: 10px; 
+        }
+
+        .accommodation img {
+            width: 80%; 
+            border-radius: 5px; 
+        }
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        #tv,#Accommodationn,#Restaurantss,#mapp,#ak{ background-image: url('kd/images/gallery/Bard_Generated_Image\ \(30\).jpeg'); /* Relative path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+width: auto;
+height: 50px;
+padding-top: 13px;
+padding-left: 40px;
+border-radius: 10px;
+font-size: 30px;
+}
+#con{  background-image: url('kd/images/gallery/Bard_Generated_Image\ \(30\).jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+width: auto;
+height: 50px;
+padding-top: 13px;
+padding-left: 40px;
+border-radius: 10px;
+font-size: 20px;
+}
+#des{
+    font-size: 40px;
+}
+
+    .social-links{
+    color: #000000;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.social-links a i {
+    font-size: 27px; 
+    margin: 0 10px; 
+}
+@media only screen and (max-width:768px) {
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links a {
+        margin: 05px; 
+        
+    }
+    .social-links a i {
+        font-size: 18px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+      
+  * {
+        background-size: contain; 
+    }
+    
+}
+
+p{
+    font-size: 20px;
+}
+a {
+            color: #1e09df;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff0000;
+        }
+        #welcomdown{
+            font-size: 25px;
+        }
+        #mapdown{
+            font-size: 25px;
+        }
+        #welcome{
+            height: 500px;
+            border-radius: 10px;
+        }
+        .wel{
+            font-size: 25px;
+
+        }
+        .transportation-icons {
+    font-size: 30px; 
+}
+#bookNow:hover{
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition:cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+button#bookNow{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        button#bookNow:hover {
+            color: #000000;
+            background-color: #ffffff;
+        }
+
+
+#reserve:hover{
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition:cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+button#reserve {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        button#reserve:hover {
+            color: #000000;
+            background-color: #ffffff;
+        }
+        @media (max-width: 600px) {
+    h1 {
+       
+        font-size: 24px;
+        
+    }
+    h2 {
+       
+        font-size: 24px;
+        
+    }
+}
+
+       
+    </style>
+</head>
+<body>
+       
+    <header>
+        <video src="kd//images/icon/EPIC ROUTES (online-video-cutter.com).mp4" autoplay loop muted id="video"></video>
+       
+    </header>
+<nav>
+    <a href="../../index.html">Home</a>
+    <a href="../galleryflr/gallery.html">gallery</a>
+    
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+           
+            <a href="#map">map</a>
+            <a href="#mode">Mode of Transport</a>
+            <a href="#Accommodationn">Accommodation</a>
+            <a href="#Restaurantss">Restaurants</a>
+        </div>
+    </div>
+</nav>
+
+<section>
+    
+
+    <h2 id="des">Welcome to kadmat!</h2>
+    <div class="image-container">
+        
+        <img  src="kd/images/gallery/underwater-adventure-blue-sea-life-reef-fish-generative-ai_188544-12760.avif" alt="Landscape Image" id="welcome">
+        <div class="image-text">Treasure of Marine Creatures</div>
+    
+    </div >
+    <p class="wel"> The tear-drop shaped Kadmath atoll is part of the Amindivi subgroup of islands and is longest in the band. The islet is home to stunning coral reefs with seagrass and marine turtles that nestle and breed here.
+    </p>
+   
+    <h2 id="mapp">Map</h2>
+    <p id="mapdown">the map to reach agatti, and helps a gateway to immersive travel experiences. Whether you're seeking the bustling streets of a cosmopolitan city, the serene shores of a tropical paradise, or the rugged beauty of natural wonders, our map offers a glimpse into the diverse tapestry of the kalpeni island. with the help of this map you can easy roam the streets of agatti</p>
+    <div id="map"></div>
+   
+    <h2 id="tv">Travel Information</h2>
+    <p>Travel information content...</p>
+    <table>
+        <tr>
+            <th id="mode">Mode of Transport</th>
+            <th>Information</th>
+        </tr>
+        
+        <tr>
+            <td><i class="fas fa-helicopter transportation-icons"></i></td>
+            <td>Agatti and Bangaram islands can be reached by flight from Kochi. Indian Airlines operate flights from Kochi. Onward flights from Kochi are available to most of the airports in India and abroad. Airstrip is there in Agatti island only. From Agatti boats are available to Kavaratti and Kadmat during fair season October to May. Helicopter transfer is available from Agatti to Kavaratti during monsoon season subjected to availability of helicopter. The flight from Cochin to Agatti takes approximately one hour and thirty minutes</td>
+        </tr>
+        <tr>
+            <td><i class="fas fa-train transportation-icons"></i> </td>
+            <td>There is no rail connectivity to Lakshadweep, as it is an island, 300 kms off the coast of Kerala.</td>
+        </tr>
+        <tr>
+            <td><i class="fas fa-car transportation-icons"></i> </td>
+            <td>There aren’t much transportation facilities available to travel around, once you have reached the island. The reason being, limited road connectivity and in some islands, there is no road connectivity at all. You may either hire a bicycle or travel around the island on foot.</td>
+        </tr>
+        <tr>
+            <td><i class="fas fa-bus transportation-icons"></i> </td>
+            <td>Since Lakshadweep is a group of islands, there is no road connectivity. One of the ways to travel in and around Lakshadweep is by boats/ ferries. Boats/ ferries can be used for getting around from one island to the other.
+                For more information visit <a href="https://samudram.utl.gov.in/">https://samudram.utl.gov.in/</a>
+                For ship tickets visit <a href="https://lakport.utl.gov.in/">https://lakport.utl.gov.in/</a> 
+            </td>
+       
+        </tr>
+        <tr>
+            <td><i class="fas fa-ship transportation-icons"></i> </td>
+            <td>Seven passenger ships  MV Kavaratti, MV Arabian Sea, MV Lakshadweep Sea, MV Lagoon, MV Corals, MV Amindivi and MV Minicoy operate between Cochin and Lakshadweep islands. The passage takes 14 to 18 hours depending on island chosen for journey. The ships offer different classes of accommodation: A/C First Class with two berth cabins, A/C Secound Class with four berth cabins and push back/Bunk Class with A/C seating. A doctor is available on call on board. MV Amindivi and MV Minicoy also offer comfortable A/C seating ideal for a night’s journey. During fair season, high speed vessels operate between islands.</td>
+        </tr>
+    </table>
+
+   
+    <h2 id="Accommodationn">Accommodation</h2>
+    <p>Recommend hotels in the area where visitors can stay.</p>
+    <div class="accommodations">
+       
+        <div class="accommodation">
+            <img src="kd/accomadation/Bard_Generated_Image (1).jpg" alt="Hotel 1">
+            <h3>Sea Breeze Resort</h3>
+            <p>Experience the tranquil sea breeze at Sea Breeze Resort. Perfect for a serene getaway.</p>
+            <p>Price: ₹ 11,250 per night</p>
+            <button id="bookNow" onclick="redirectToPage()">Book Now</button>
+
+        </div>
+        <div class="accommodation">
+            <img src="kd/accomadation/Bard_Generated_Image (6).jpg" alt="Hotel 1">
+            <h3>Sunset Retreat</h3>
+            <p>Witness mesmerizing sunsets at Sunset Retreat. A cozy stay with stunning views.</p>
+            <p>Price: ₹ 9,600 per night</p>
+            <button id="bookNow" onclick="redirectToPage()">Book Now</button>
+        </div>
+        <div class="accommodation">
+            <img src="kd/accomadation/Bard_Generated_Image.jpg" alt="Hotel 1">
+            <h3>Ocean View Inn</h3>
+            <p>Enjoy panoramic ocean views at Ocean View Inn. Your gateway to coastal paradise.</p>
+            <p>Price: ₹ 12,000 per night</p>
+             <button id="bookNow" onclick="redirectToPage()">Book Now</button>
+        </div>
+        <div class="accommodation">
+            <img src="kd/accomadation/beach side hote 320c6ef5-edeb-47.png" alt="Hotel 1">
+            <h3>Beachfront Bliss</h3>
+            <p>Experience blissful moments by the beach at Beachfront Bliss. Unwind in serenity.</p>
+            <p>Price: ₹ 10,800 per night</p>
+             <button id="bookNow" onclick="redirectToPage()">Book Now</button>
+        </div>
+        <div class="accommodation">
+            <img src="kd/accomadation/beach side hote 6f660294-8e75-4a.png" alt="Hotel 1">
+            <h3>Island Hideaway</h3>
+            <p>Escape to your own island hideaway at Island Hideaway. Privacy and relaxation guaranteed.</p>
+            <p>Price: ₹ 13,500 per night</p>
+             <button id="bookNow" onclick="redirectToPage()">Book Now</button>
+        </div>
+        <div class="accommodation">
+            <img src="kd/accomadation/beach side hote 9a5fbb94-dbb7-4d.png" alt="Hotel 1">
+            <h3>Tropical Paradise Resort</h3>
+            <p>Discover the beauty of a tropical paradise at Tropical Paradise Resort. An unforgettable stay awaits.</p>
+            <p>Price: ₹ 14,400 per night</p>
+            <button id="bookNow" onclick="redirectToPage()">Book Now</button>
+        </div>
+        <div class="accommodation">
+            <img src="kd/accomadation/Untitled design (12) (1).png" alt="Hotel 1">
+            <h3>Palm Grove Lodge</h3>
+            <p>Relax under the shade of palm groves at Palm Grove Lodge. Your oasis of tranquility.</p>
+            <p>Price: ₹ 8,640 per night</p>
+             <button id="bookNow" onclick="redirectToPage()">Book Now</button>
+        </div>
+        <div class="accommodation">
+            <img src="kd/accomadation/Untitled design (13) (1).png" alt="Hotel 1">
+            <h3>Coastal Haven</h3>
+            <p>Find refuge in coastal serenity at Coastal Haven. Your home away from home.</p>
+            <p>Price: ₹ 11,250 per night</p>
+             <button id="bookNow" onclick="redirectToPage()">Book Now</button>
+        </div>
+    </div>
+   
+    
+       
+    </div>
+  
+    <h1 id="Restaurantss">Restaurants</h1>
+    <p>Suggest local restaurants and eateries for a delightful dining experience.</p>
+   
+    <div class="restaurants">
+        <div class="restaurant">
+            <img src="kd/resturant/Bard_Generated_Image (12).jpeg" alt="Restaurant 1">
+            <h3>Coastal Flavor</h3>
+            <p>Experience the diverse coastal flavors at Coastal Flavor. A culinary journey awaits!</p>
+            <p>Hours: 12:00 PM - 9:00 PM</p>
+            <button id="reserve" onclick="redirectToHotelBooking()">book table</button>
+        </div>
+        <div class="restaurant">
+            <img src="kd/resturant/Bard_Generated_Image (13).jpeg" alt="Restaurant 1">
+            <h3>Seafood Delight</h3>
+            <p>Indulge in delicious seafood delights at Seafood Delight. Fresh catch served daily!</p>
+            <p>Hours: 11:30 AM - 10:00 PM</p>
+             <button id="reserve" onclick="redirectToHotelBooking()">book table</button>
+        </div>
+        <div class="restaurant">
+            <img src="kd/resturant/Bard_Generated_Image (16).jpeg" alt="Restaurant 1">
+            <h3>Island Spice</h3>
+            <p>Spice up your palate with Island Spice's exotic dishes. A burst of flavors in every bite!</p>
+            <p>Hours: 11:00 AM - 8:00 PM</p>
+             <button id="reserve" onclick="redirectToHotelBooking()">book table</button>
+        </div>
+        <div class="restaurant">
+            <img src="kd/resturant/Bard_Generated_Image (2).jpeg" alt="Restaurant 1">
+            <h3>Tropical Treats</h3>
+            <p>Indulge in tropical treats at Tropical Treats. Taste the essence of the islands!</p>
+            <p>Hours: 10:00 AM - 7:00 PM</p>
+             <button id="reserve" onclick="redirectToHotelBooking()">book table</button>
+        </div>
+        <div class="restaurant">
+            <img src="kd/resturant/Bard_Generated_Image (23).jpeg" alt="Restaurant 1">
+            <h3>Beachside Bistro</h3>
+            <p>Relax and dine at Beachside Bistro. Enjoy beach views with every meal!</p>
+            <p>Hours: 9:00 AM - 6:00 PM</p>
+             <button id="reserve" onclick="redirectToHotelBooking()">book table</button>
+        </div>
+        <div class="restaurant">
+            <img src="kd/resturant/Bard_Generated_Image (24).jpeg" alt="Restaurant 1">
+            <h3>Island Grill</h3>
+            <p>Sizzle with excitement at Island Grill. Grilled delights served hot!</p>
+            <p>Hours: 12:00 PM - 10:00 PM</p>
+             <button id="reserve" onclick="redirectToHotelBooking()">book table</button>
+        </div>
+        <div class="restaurant">
+            <img src="kd/resturant/Bard_Generated_Image (5).jpeg" alt="Restaurant 1">
+            <h3>Coconut Grove</h3>
+            <p>Experience the taste of the tropics at Coconut Grove. Relax under swaying coconut trees!</p>
+            <p>Hours: 10:30 AM - 9:30 PM</p>
+             <button id="reserve" onclick="redirectToHotelBooking()">book table</button>
+        </div>
+        <div class="restaurant">
+            <img src="kd/resturant/Untitled design (4) (2).png" alt="Restaurant 1">
+            <h3>Seaside Serenade</h3>
+            <p>Enjoy a seaside serenade at Seaside Serenade. Ocean vibes and delicious dishes!</p>
+            <p>Hours: 11:00 AM - 10:00 PM</p>
+             <button id="reserve" onclick="redirectToHotelBooking()">book table</button>
+        </div>
+    </div>
+    
+        
+    </div>
+</section>
+<section id="contact">
+    <h2 id="ak">Acknowledgement</h2>
+    The use of imaginary data allowed us to explore various analytical techniques, test hypotheses, and develop skills in data manipulation and analysis in a controlled environment. However, it's important to recognize the limitations of using imaginary data, as it does not capture the complexities, biases, and nuances present in real-world datasets.
+</section>
+
+
+<p id="con">Connect with us on social media:</p>
+<div class="social-links">
+   
+    <a href="mailto:bvchethan1@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a> 
+    <a href="https://www.instagram.com/your_instagram_username" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/your_facebook_username" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://github.com/your_github_username" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/your_twitter_username" target="_blank"><i class="fab fa-twitter"></i></a> 
+    <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+
+<footer>
+    <p> &copy; 2024 EPIC ROUTES. All rights reserved.</p>
+</footer>
+<script>
+   
+    function redirectToPage() {
+       
+        window.location.href = "booknow.html";
+    }
+    function redirectToHotelBooking() {
+            window.location.href = "reservation.html";
+        }
+   
+</script>
+</body>
+</html>
