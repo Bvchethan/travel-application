@@ -324,12 +324,16 @@
     padding-bottom: 10px;
     text-align: center;
 }
+.err-img{
+    display: none;
+}
     </style>
 </head>
 <body>
 
     <header>
-        <video src="images/icon/EPIC ROUTES (online-video-cutter.com).mp4" autoplay loop muted></video>
+        <video src="images/icon/EPIC ROUTES (online-video-cutter.com).mp4" id="intro" autoplay loop muted></video>
+        <img class="err-img"  src="Screenshot 2024-02-04 005001.jpg" alt="">
     </header>
    
 
@@ -446,6 +450,9 @@
             document.getElementById("feedbackPopup").style.display = "none";
             document.getElementById("overlay").style.display = "none";
         }
+        document.getElementById('intro').addEventListener('error',(e)=>{
+
+        })
     </script>
 </body>
 </html>
